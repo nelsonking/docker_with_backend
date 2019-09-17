@@ -14,7 +14,9 @@
 7、安装说明
 ``` bash
 使用含有bash脚本环境执行命令，如MINWG（安装git会自动安装）
-镜像下载地址：
+
+镜像下载地址: https://pan.baidu.com/s/1VNa0FWvl-CjMLyzZt_jUpg 
+提取码: remq 
 ```
 
 ### 安装步骤
