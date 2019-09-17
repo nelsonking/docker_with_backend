@@ -11,8 +11,8 @@ code_dir="D:/Code"
 code_dir_map="-v $code_dir:/web"
 
 # nginx 共享配置 (需要变更为真实环境)
-nginx_config="D:/Code/docker/nginx/nginx.conf"
-nginx_config_d="D:/Code/docker/nginx/conf.d"
+nginx_config="D:/docker_with_backend/nginx/nginx.conf"
+nginx_config_d="D:/docker_with_backend/nginx/conf.d"
 
 nginx_config_map="-v $nginx_config:/etc/nginx/nginx.conf -v $nginx_config_d:/etc/nginx/conf.d"
 nginx_port_map="-p 80:80 -p 443:443"

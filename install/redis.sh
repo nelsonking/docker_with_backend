@@ -5,9 +5,9 @@ source ./common.sh
 check_container redis
 
 # reids 共享配置 (需要变更为真实环境)
-redis_data="D:/Code/docker/redis/data"
+redis_data="D:/docker_with_backend/redis/data"
 # 配置修改项 去掉绑定，去掉安全模型，开启持久化
-redis_config="D:/Code/docker/redis/redis.conf"
+redis_config="D:/docker_with_backend/redis/redis.conf"
 
 redis_data_map="-v $redis_data:/data"
 redis_config_map="-v $redis_config:/etc/redis/redis.conf"

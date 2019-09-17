@@ -5,8 +5,8 @@ source ./common.sh
 check_container mysql
 
 # mysql 共享配置 (需要变更为真实环境)
-mysql_data="D:/Code/docker/mysql/data"
-mysql_config="D:/Code/docker/mysql/mysql.cnf"
+mysql_data="D:/docker_with_backend/mysql/data"
+mysql_config="D:/docker_with_backend/mysql/mysql.cnf"
 
 mysql_data_map="-v $mysql_data:/var/lib/mysql"
 mysql_config_map="-v $mysql_config:/etc/mysql/conf.d/mysql.cnf"

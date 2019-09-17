@@ -5,7 +5,7 @@ source ./common.sh
 check_container mongo 
 
 # mongo 共享配置 (需要变更为真实环境,mongo 目前无法将 存储文件提取出来，因为共享文件夹的机制与MongoDB使用的内存映射文件不兼容)
-mongo_config="D:/Code/docker/mongo/mongod.conf"
+mongo_config="D:/docker_with_backend/mongo/mongod.conf"
 
 mongo_config_map="-v $mongo_config:/etc/mongod.conf"
 redis_port_map="-p 27017:27017"
