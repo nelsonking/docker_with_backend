@@ -1,7 +1,5 @@
 #!/bin/bash
 
 # 进入环境
-winpty docker exec -it $1 bash
-
-
-
+#winpty docker exec -it $1 bash
+docker exec -it $1 bash
