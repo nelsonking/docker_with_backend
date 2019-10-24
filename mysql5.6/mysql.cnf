@@ -1,0 +1,5 @@
+[mysql]
+
+[mysqld]
+lower_case_table_names=1
+max_connections=1000
