@@ -12,4 +12,5 @@ docker pull mongo:latest
 docker pull mysql:5.7
 docker pull centos:latest
 docker pull redis:3.2
+docker pull docker.io/jenkins:latest
 ```

@@ -6,4 +6,4 @@
 docker load -i ../source/nginx_latest.tar.gz
 #docker load -i ../source/php_7.1_fpm.tar.gz
 docker load -i ../source/redis_3.2.tar.gz
-
+docker load -i ../source/jenkins_2.2.tar.gz

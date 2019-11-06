@@ -6,6 +6,9 @@ docker_run="docker run -d -it --privileged --name"
 # 使用桥接网络，并对当前容器网络命名
 use_network_alias="--network $network --network-alias"
 
+# 添加hosts
+add_host="--add-host gitlab.devops.top:192.168.10.234"
+
 # 创建共享网络
 networkexist=`docker network ls | grep $network`
 if [ -n "$networkexist" ]; then

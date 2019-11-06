@@ -14,4 +14,4 @@ mysql_port_map="-p 3307:3306"
 mysql_root_password="-e MYSQL_ROOT_PASSWORD=123456"
 
 # 安装mysql
-$docker_run mysql5.6 $mysql_data_map $mysql_config_map $mysql_port_map $mysql_root_password $use_network_alias mysql5.6 docker.io/mysql:5.6
+$docker_run mysql5.6 $share_map $mysql_data_map $mysql_config_map $mysql_port_map $mysql_root_password $use_network_alias mysql5.6 docker.io/mysql:5.6
