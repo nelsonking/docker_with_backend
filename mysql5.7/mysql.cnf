@@ -1,8 +1,10 @@
-[mysqld]
-default_authentication_plugin=mysql_native_password
+[mysql]
 
+[mysqld]
+lower_case_table_names=1
 max_connections=1000
 interactive_timeout=120
 wait_timeout=120
 max_allowed_packet=32M
+
 innodb_flush_log_at_trx_commit=0

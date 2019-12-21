@@ -1,2 +1,2 @@
 #!/bin/bash
-docker spect $1
+docker inspect $1
