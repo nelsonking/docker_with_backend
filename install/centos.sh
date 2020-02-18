@@ -1,15 +1,15 @@
 #!/bin/bash
 source ./common.sh
 
-# ¼ì²éÈİÆ÷ÊÇ·ñ°²×°£¬²¢É¾³ıÒÑ°²×°µÄÈİÆ÷
+# æ£€æŸ¥å®¹å™¨æ˜¯å¦å®‰è£…ï¼Œå¹¶åˆ é™¤å·²å®‰è£…çš„å®¹å™¨
 check_container centos
 
-# ´úÂë¹²ÏíÅäÖÃ (ĞèÒª±ä¸üÎªÕæÊµ»·¾³)
+# ä»£ç å…±äº«é…ç½® (éœ€è¦å˜æ›´ä¸ºçœŸå®ç¯å¢ƒ)
 code_dir="D:/Code"
 code_dir_map="-v $code_dir:/web"
 
-# centos linux¶Ë¿ÚÅäÖÃ¢ƒ
+# centos linuxç«¯å£é…ç½®î•¨
 linux_port_map="-p 3000:3000" 
 
-# ÔËĞĞcentos¯å¢ƒ
+# è¿è¡Œcentosîˆšî•¨
 $docker_run centos $code_dir_map $linux_port_map $use_network_alias centos centos:latest 
