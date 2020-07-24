@@ -21,6 +21,13 @@ fi
 # 共享root用户家目录作为交换目录
 share_map="-v /root:/share"
 
+# 超级管理
+supper="--privileged=true"
+super_append="/usr/sbin/init"
+
+# 共享时间
+share_time="-v /etc/localtime:/etc/localtime"
+
 # 检查容器是否创建
 check_container(){
     container_exist=`docker ps -a | grep $1`

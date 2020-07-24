@@ -18,8 +18,8 @@ nginx_config_map="-v $nginx_config:/etc/nginx/nginx.conf -v $nginx_config_d:/etc
 nginx_port_map="-p 80:80 -p 443:443"
 
 
-# 安装php
-$docker_run php $code_dir_map $use_network_alias php docker.io/php:7.3-fpm
+# 安装php --user=1000:1000 表示指定用宿主机的www.www用户来运行容器，用来统一日志文件的权限
+$docker_run php $code_dir_map $share_map $share_time $use_network_alias php --user=1000:1000 qjy_php:7.3-fpm
 
 # 安装nginx
-$docker_run nginx $code_dir_map $nginx_config_map $nginx_port_map $use_network_alias nginx nginx:latest
+$docker_run nginx $code_dir_map $nginx_config_map $nginx_port_map $share_map $share_time $use_network_alias nginx nginx:latest
