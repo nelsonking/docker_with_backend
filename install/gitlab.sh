@@ -19,5 +19,5 @@ gitlab_data_map="-v $gitlab_data:/var/opt/gitlab"
 gitlab_port_map="-p 8090:80"
 
 #$docker_run gitlab $gitlab_config_map $gitlab_log_map $gitlab_data_map $gitlab_port_map $use_network_alias gitlab docker.io/gitlab/gitlab-ce:latest
-$docker_run gitlab $add_host $code_dir_map $gitlab_config_map $gitlab_log_map $gitlab_data_map $gitlab_port_map $use_network_alias gitlab docker.io/beginor/gitlab-ce:11.0.1-ce.0
+$docker_run gitlab $add_host $code_dir_map $gitlab_config_map $gitlab_log_map $gitlab_data_map $gitlab_port_map $use_network_alias gitlab docker.io/gitlab/gitlab-ce:latest
 #$docker_run gitlab $gitlab_port_map $use_network_alias gitlab docker.io/gitlab/gitlab-ce:latest

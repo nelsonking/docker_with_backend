@@ -6,11 +6,12 @@
 
 # 如果网络请求够快，可通过下列命令下载镜像
 ```
-docker pull php:7.1-fpm
+docker pull php:7.4-fpm
 docker pull nginx:latest
 docker pull mongo:latest
-docker pull mysql:5.7
+docker pull mysql:8.0
 docker pull centos:latest
-docker pull redis:3.2
+docker pull redis:latest
 docker pull docker.io/jenkins:latest
 ```
+
