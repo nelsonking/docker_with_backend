@@ -21,6 +21,8 @@ fi
 # 共享root用户家目录作为交换目录
 share_map="-v /root:/share"
 
+limit_cpu='--cpuset-cpus="0-4"'
+
 # 检查容器是否创建
 check_container(){
     container_exist=`docker ps -a | grep $1`

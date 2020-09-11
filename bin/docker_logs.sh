@@ -1,2 +1,2 @@
 #!/bin/bash
-docker logs $1
+docker logs --tail 500 $1

@@ -15,7 +15,7 @@ sudo chown -R 1000:1000 $jenkins_base
 
 # 安装jenkins
 #$docker_run jenkins $jenkins_data_map $jekins_port_map $use_network_alias jekins docker.io/jenkins:latest
-$docker_run jenkins $add_host $jenkins_data_map $jenkins_port_map $use_network_alias jenkins docker.io/jenkins:latest
+$docker_run jenkins $add_host $jenkins_data_map $jenkins_port_map $use_network_alias jenkins docker.io/jenkins/jenkins:latest
 
 # 07497caa505d492281019533ae49d933 
 # root password
