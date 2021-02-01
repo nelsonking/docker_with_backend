@@ -1,0 +1,7 @@
+server_addr: "home.nelsonking.cn:4443"
+trust_host_root_certs: false
+tunnels:
+  webapp:
+    proto:
+      http: 80
+    subdomain: test
