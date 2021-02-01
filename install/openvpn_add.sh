@@ -9,7 +9,6 @@ vpn_port_map="-p 1194:1194/udp"
 vpn_image="docker.io/kylemanna/openvpn"
 vpn_cer_name="qjyedu"
 export_dir="/opt/docker_with_backend/export/"
-export_cer="/opt/docker_with_backend/export/qjyedu.ovpn"
 
 
 # 添加用户

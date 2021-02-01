@@ -15,7 +15,7 @@ export_cer="/opt/docker_with_backend/export/qjyedu.ovpn"
 
 # 安装openvpn
 echo 生成秘钥
-echo docker run $vpn_data_map --rm $vpn_image ovpn_genconfig -u udp://125.35.107.22
+echo docker run $vpn_data_map --rm $vpn_image ovpn_genconfig -u udp://221.217.90.206
 
 echo 生成配置文件
 echo docker run $vpn_data_map --rm -it $vpn_image ovpn_initpki
