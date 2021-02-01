@@ -27,6 +27,7 @@ super_append="/usr/sbin/init"
 
 # 共享时间
 share_time="-v /etc/localtime:/etc/localtime"
+limit_cpu='--cpuset-cpus="0-4"'
 
 # 检查容器是否创建
 check_container(){
