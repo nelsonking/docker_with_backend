@@ -1,4 +1,4 @@
-server_addr: "home.nelsonking.cn:4443"
+server_addr: "jump.nelsonking.cn:4443"
 trust_host_root_certs: false
 tunnels:
   webapp:
